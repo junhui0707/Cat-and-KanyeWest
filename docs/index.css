@@ -35,7 +35,7 @@ div#quotes{
 }
 
 #background {
-    background: url(/docs/background.gif) no-repeat center center fixed;
+    background: url(./background.gif) no-repeat center center fixed;
     background-size: cover;
   
 }
