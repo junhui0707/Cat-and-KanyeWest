@@ -31,6 +31,7 @@ app.get('/cat', function (req, res) {
         })
 });
 
-app.listen(7079, function () {
-    console.log('Backend is working');
+const port = process.env.PORT || 7079;
+app.listen(port, function () {
+    console.log('Backend is working at port ' + port);
 });
