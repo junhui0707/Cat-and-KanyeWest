@@ -1,7 +1,7 @@
 let kanyeButton = document.getElementById('kanye-quote')
 kanyeButton.addEventListener("click", evt => {
     let quotesDiv = document.getElementById('quotes')
-    fetch('https://git.heroku.com/ca3-kanyewest-cat.git/kanye')
+    fetch('https://ca3-kanyewest-cat.herokuapp.com/kanye')
         .then(res => res.json())
         .then(quote => {
             quotesDiv.innerHTML += `<p> ${quote.quote} </p>`
@@ -13,7 +13,7 @@ let catButton = document.getElementById('give-cat')
 catButton.addEventListener("click", evt => {
     let catDiv = document.getElementById('cat-pic')
 
-    fetch('https://git.heroku.com/ca3-kanyewest-cat.git/cat')
+    fetch('https://ca3-kanyewest-cat.herokuapp.com/cat')
         .then(res => res.json())
         .then(cats => {
             cats.forEach(cat => {
